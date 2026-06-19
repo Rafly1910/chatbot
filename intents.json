@@ -1,0 +1,91 @@
+{
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": [
+        "Halo", 
+        "Hai", 
+        "Selamat pagi", 
+        "Permisi", 
+        "Ada orang?", 
+        "P", 
+        "Bot"
+      ],
+      "responses": [
+        "Halo! Saya asisten virtual Mata Kuliah Basis Data. Ada materi mengenai ERD, Normalisasi, atau query SQL yang ingin didiskusikan?"
+      ]
+    },
+    {
+      "tag": "definisi_basis_data",
+      "patterns": [
+        "Apa itu basis data?", 
+        "Jelaskan pengertian basis data", 
+        "Definisi database itu apa?", 
+        "Apa bedanya data dan basis data?"
+      ],
+      "responses": [
+        "Basis data (database) adalah kumpulan data yang saling berelasi, diorganisasikan, dan disimpan secara sistematis di dalam komputer supaya bisa diolah atau dimanipulasi menggunakan perangkat lunak (DBMS) untuk menghasilkan informasi."
+      ]
+    },
+    {
+      "tag": "konsep_dbms",
+      "patterns": [
+        "Apa itu DBMS?", 
+        "Fungsi DBMS untuk apa?", 
+        "Sebutkan contoh DBMS", 
+        "Kenapa kita harus pakai DBMS?"
+      ],
+      "responses": [
+        "DBMS (Database Management System) adalah perangkat lunak perantara untuk mengelola, menyimpan, dan mengambil data dari basis data secara aman dan efisien. Contoh DBMS yang populer adalah MySQL, PostgreSQL, Oracle, dan SQL Server."
+      ]
+    },
+    {
+      "tag": "komponen_erd",
+      "patterns": [
+        "Apa itu ERD?", 
+        "Jelaskan komponen ERD", 
+        "Bedanya entitas dan atribut apa?", 
+        "Entity Relationship Diagram itu gimana bentuknya?"
+      ],
+      "responses": [
+        "ERD (Entity Relationship Diagram) adalah model konseptual yang menggambarkan struktur data dan hubungan antar data. Tiga komponen utamanya adalah: 1. Entitas (objek, misal 'Mahasiswa'), 2. Atribut (karakteristik entitas, misal 'NIM', 'Nama'), dan 3. Relasi (hubungan antar entitas, misal 'Mendaftar')."
+      ]
+    },
+    {
+      "tag": "tujuan_normalisasi",
+      "patterns": [
+        "Tolong jelaskan normalisasi", 
+        "Apa tujuan normalisasi basis data?", 
+        "Kenapa tabel harus dinormalisasi?", 
+        "Apa itu anomali data?"
+      ],
+      "responses": [
+        "Normalisasi adalah teknik mendesain struktur tabel dalam database untuk meminimalkan redundansi (pengulangan data) dan mencegah anomali (error/inkonsistensi saat melakukan Insert, Update, atau Delete data). Proses ini biasanya dibagi menjadi beberapa tahap, mulai dari 1NF, 2NF, hingga 3NF."
+      ]
+    },
+    {
+      "tag": "ddl_vs_dml",
+      "patterns": [
+        "Apa bedanya DDL dan DML?", 
+        "Jelaskan DDL dan DML di SQL", 
+        "Contoh perintah DDL apa saja?", 
+        "Perintah Insert itu masuk DDL atau DML?"
+      ],
+      "responses": [
+        "DDL (Data Definition Language) digunakan untuk mendefinisikan atau mengubah struktur database (contoh perintah: CREATE, ALTER, DROP). Sedangkan DML (Data Manipulation Language) digunakan untuk mengelola isi data di dalam tabel (contoh perintah: SELECT, INSERT, UPDATE, DELETE)."
+      ]
+    },
+    {
+      "tag": "primary_foreign_key",
+      "patterns": [
+        "Apa itu Primary Key?", 
+        "Bedanya Primary Key dan Foreign Key?", 
+        "Jelaskan konsep Foreign Key", 
+        "Kunci tamu itu apa?"
+      ],
+      "responses": [
+        "Primary Key (Kunci Primer) adalah atribut unik yang menjadi identitas utama sebuah baris dalam tabel (misalnya NIM mahasiswa). Sedangkan Foreign Key (Kunci Tamu) adalah atribut pada sebuah tabel yang merujuk pada Primary Key di tabel lain, yang berfungsi untuk menciptakan relasi antar kedua tabel tersebut."
+      ]
+    }
+  ]
+}
